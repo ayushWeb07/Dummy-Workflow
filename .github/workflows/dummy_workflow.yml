@@ -23,7 +23,7 @@ jobs:
       - name: Install deps
         run: pnpm install
 
-      - name: Run dev server
+      - name: Run index script
         run: pnpm run dev
 
       - name: Run tests
