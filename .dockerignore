@@ -3,3 +3,6 @@ node_modules
 .gitignore
 .github
 .git
+Dockerfile*
+docker-compose*
+.env.*
