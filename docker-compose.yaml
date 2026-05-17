@@ -2,8 +2,10 @@ version: "3.8"
 
 services:
   server:
-    image: ayushbommana07/dummy-github-worflow
-    ports:
-      - "3000:3000"
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: my-dummy-github-workflow
     restart: always
+    ports:
+      - "3000:3000"
