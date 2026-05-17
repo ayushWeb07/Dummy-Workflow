@@ -1,4 +1,4 @@
-name: Deployment on AWS EC2
+name: Deployment Workflow
 on:
   push:
     branches:
@@ -16,7 +16,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USERNAME }}
-          ssh_key: ${{ secrets.EC2_SSH_KEY }}
+          key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd /home/ubuntu/Dummy-Workflow
             git pull origin main
