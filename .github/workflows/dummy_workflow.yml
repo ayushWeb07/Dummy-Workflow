@@ -24,7 +24,7 @@ jobs:
         run: pnpm install
 
       - name: Run index script
-        run: pnpm run dev
+        run: pnpm run start
 
       - name: Run tests
         run: pnpm run test
